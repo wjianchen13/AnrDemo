@@ -136,7 +136,7 @@ public class AppBlockCanaryContext extends BlockCanaryContext {
      * @return true if need, else if not need.
      */
     public boolean displayNotification() {
-        return false;
+        return true; // 启用通知显示
     }
 
     /**
@@ -202,8 +202,13 @@ public class AppBlockCanaryContext extends BlockCanaryContext {
      * 卡顿发生时的回调，可以自定义处理
      */
     public void onBlock(Context context, BlockInfo blockInfo) {
-
-
+        // 记录卡顿信息
+        Log.e("BlockCanary", "检测到卡顿！");
+        Log.e("BlockCanary", "卡顿时长: " + blockInfo.timeCost + "ms");
+        Log.e("BlockCanary", "发生时间: " + blockInfo.timeStart);
+        
+        // BlockCanary 会自动显示通知（因为 displayNotification() 返回 true）
+        // 这里可以添加自定义处理逻辑，比如上传到服务器等
     }
 
 }
