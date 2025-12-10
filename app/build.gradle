@@ -37,4 +37,9 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+
+    debugImplementation files('libs/blockcanary-analyzer-release.aar')
+    debugImplementation files('libs/blockcanary-android-release.aar')
+    releaseImplementation files('libs/blockcanary-android-no-op-release.aar')
+
 }

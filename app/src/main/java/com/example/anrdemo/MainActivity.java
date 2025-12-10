@@ -1,12 +1,16 @@
 package com.example.anrdemo;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.anrdemo.test1.TestActivity1;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,4 +25,9 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
+
+    public void onTest1(View v) {
+        startActivity(new Intent(this, TestActivity1.class));
+    }
+
 }

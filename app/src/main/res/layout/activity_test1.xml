@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Anr相关测试"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BlockCanary 卡顿测试"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"/>
+
+            <Button
+                android:id="@+id/btn_simple_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="简单卡顿（1 秒）"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_medium_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="中等卡顿（2-3 秒）"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_severe_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="严重卡顿（5 秒 - ANR 级别）"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_loop_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="循环卡顿（3 秒）"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_io_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IO 卡顿（文件读写）"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_network_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="网络卡顿（同步请求）"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_memory_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="内存分配卡顿"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_db_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="数据库卡顿"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_json_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JSON 解析卡顿"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_bitmap_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bitmap 处理卡顿"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⚠️ 注意：这些操作会导致应用卡顿甚至 ANR，仅用于测试 BlockCanary"
+                android:textColor="#FF0000"
+                android:layout_marginTop="16dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
