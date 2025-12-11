@@ -135,7 +135,7 @@ public class TestActivity1 extends AppCompatActivity {
 
         try {
             // 直接 sleep 主线程 1 秒
-            Thread.sleep(1000);
+            Thread.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
