@@ -1,0 +1,65 @@
+qua = unknown
+versionName = 2.8.5_debug
+versionCode = 285
+imei = empty_imei
+uid = uid
+network = wifi
+model = SM-C5560
+api-level = 34 14
+cpu-core = 8
+process = com.hayoparty.chat
+freeMemory = 3531228
+totalMemory = 7232164
+time = 685
+thread-time = 587
+time-start = 12-11 15:03:37.354
+time-end = 12-11 15:03:38.039
+cpu-busy = false
+cpu-rate = null
+stack = 12-11 15:03:37.757
+org.json.JSONTokener.nextString(JSONTokener.java:215)
+org.json.JSONTokener.nextValue(JSONTokener.java:111)
+org.json.JSONTokener.readObject(JSONTokener.java:380)
+org.json.JSONTokener.nextValue(JSONTokener.java:104)
+org.json.JSONTokener.readArray(JSONTokener.java:449)
+org.json.JSONTokener.nextValue(JSONTokener.java:107)
+org.json.JSONTokener.readObject(JSONTokener.java:403)
+org.json.JSONTokener.nextValue(JSONTokener.java:104)
+org.json.JSONTokener.readObject(JSONTokener.java:403)
+org.json.JSONTokener.nextValue(JSONTokener.java:104)
+org.json.JSONObject.<init>(JSONObject.java:168)
+org.json.JSONObject.<init>(JSONObject.java:185)
+com.gou.android.ckg.base.functions.MyJSONObject.<init>(MyJSONObject.kt:21)
+com.gou.android.ckg.base.functions.MyJSONObject$Companion.parseJSONObject(MyJSONObject.kt:285)
+com.gou.android.ckg.base.functions.MyJSONObject.parseJSONObject(Unknown Source:2)
+com.huahua.android.fan.frame.cores.user.FrameVersionsCoreImmpl.<init>(FrameVersionsCoreImmpl.java:318)
+java.lang.Class.newInstance(Native Method)
+com.gou.android.ckg.base.base.coremanager.CommonFactory.getBaseCore(CommonFactory.kt:51)
+com.gou.android.ckg.base.base.coremanager.CommonManager.getBaseCore(CommonManager.kt:299)
+com.huahua.android.fan.frame.managers.FrameCoreImplMaanager.getCoore(FrameCoreImplMaanager.java:37)
+com.huahua.android.fan.frame.utils.FrameCoreParamUttil.getDef_Param(FrameCoreParamUttil.kt:17)
+com.huahua.android.fan.frame.cores.gift.FrameCoreGiftCoreImmpl.requestGiftInnfosAll(FrameCoreGiftCoreImmpl.kt:291)
+com.huahua.android.fan.frame.cores.gift.FrameCoreGiftCoreImmpl.<init>(FrameCoreGiftCoreImmpl.kt:190)
+java.lang.Class.newInstance(Native Method)
+com.gou.android.ckg.base.base.coremanager.CommonFactory.getBaseCore(CommonFactory.kt:51)
+com.gou.android.ckg.base.base.coremanager.CommonManager.getBaseCore(CommonManager.kt:299)
+com.kk.android.hbc.hyk.app.MyHykApplication.initInMainProcess(MyHykApplication.java:172)
+com.kk.android.hbc.hyk.app.MyHykApplication.initEverything(MyHykApplication.java:124)
+com.kk.android.hbc.hyk.app.activitys.ApccSplashUIAktvtcc.initiateApp(ApccSplashUIAktvtcc.kt:180)
+com.kk.android.hbc.hyk.app.activitys.ApccSplashUIAktvtcc.onCreate(ApccSplashUIAktvtcc.kt:127)
+android.app.Activity.performCreate(Activity.java:8975)
+android.app.Activity.performCreate(Activity.java:8944)
+android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1456)
+android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4146)
+android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4322)
+android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:103)
+android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:139)
+android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:96)
+android.app.ActivityThread$H.handleMessage(ActivityThread.java:2685)
+android.os.Handler.dispatchMessage(Handler.java:106)
+android.os.Looper.loopOnce(Looper.java:230)
+android.os.Looper.loop(Looper.java:319)
+android.app.ActivityThread.main(ActivityThread.java:8919)
+java.lang.reflect.Method.invoke(Native Method)
+com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:578)
+com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1103)

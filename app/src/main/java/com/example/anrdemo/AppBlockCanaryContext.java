@@ -101,15 +101,15 @@ public class AppBlockCanaryContext extends BlockCanaryContext {
 
         if (totalMem < 2048) {
             // 低端机（内存 < 2GB）：阈值 2 秒
-            Utils.log("===============> provideBlockThreshold: " + 2000);
+            Utils.log("provideBlockThreshold: " + 2000);
             return 2000;
         } else if (totalMem < 4096) {
             // 中端机（内存 2-4GB）：阈值 1 秒
-            Utils.log("===============> provideBlockThreshold: " + 1000);
+            Utils.log("provideBlockThreshold: " + 1000);
             return 1000;
         } else {
             // 高端机（内存 > 4GB）：阈值 500 毫秒
-            Utils.log("===============> provideBlockThreshold: " + 500);
+            Utils.log("provideBlockThreshold: " + 500);
             return 500;
         }
     }
